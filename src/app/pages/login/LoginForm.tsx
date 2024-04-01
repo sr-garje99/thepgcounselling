@@ -27,7 +27,7 @@ export default function LoginForm() {
     }
   };
   return (
-    <div  >
+    <div  style={{padding:'2%',margin:'10%',}}>
       {loggedIn ? (
         <Typography variant="body1">You are logged in!</Typography>
       ) : (
@@ -53,9 +53,13 @@ export default function LoginForm() {
             margin="normal"
             variant="outlined"
           />
-          <Button type="submit" variant="contained" color="primary">
+          <Button type="submit" variant="contained" color="primary" fullWidth>
             Login
           </Button>
+          <br/>
+          {/* <Button type="submit" variant="contained" color="primary" fullWidth>
+            Continue with Google
+          </Button> */}
         </form>
       )}
     </div>
